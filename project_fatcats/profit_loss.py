@@ -1,5 +1,5 @@
 
-def profitloss_function(x):
+def profitloss_function(forex):
     import csv
 
     with open('csv_reports\profit-and-loss-usd.csv', newline='') as f:

@@ -1,4 +1,4 @@
-def coh_function(forex):
+def coh_function(f):
 
     import csv
 

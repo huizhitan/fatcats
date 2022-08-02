@@ -1,17 +1,27 @@
 
+def overheads_funtion(x):
+    import csv
 
-import csv
-from pathlib import Path
-filepath = Path.cwd()/'csv_reports'/'overheads-day-90.csv'
-def overheads_funtion():
-    read = filepath.open(mode = 'r', encoding = 'UTF-8', newline = '')
-    next(read)
-    reader = read.readlines()
-    data = list(reader)
-    for maxdata in range(0):
-        floating = float(maxdata)
-        print(floating)
-        break
-        overheads_function()
+    with open('csv_reports\overheads-day-90.csv', newline='') as f:
+        reader = csv.reader(f)
+        data = list(reader)
+    
+    for p in range(1,len(data)-1):
+        if float(data[p+1][1])<float(data[p][1]):
+            print('[HIGHEST OVERHEADS] DAY: '+data[p+1][0]+', AMOUNT: SGD'+float(data[p+1][1]/x))
+
+
+    #for maxdata in data:
+        #print(maxdata)
+
+
+
+
+        #floating = float(maxdata)
+        #print(floating)
+        #break
+
+
+overheads_funtion(1.5)
 
         

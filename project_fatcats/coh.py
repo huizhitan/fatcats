@@ -1,4 +1,4 @@
-def coh_function(f):
+def coh_function(x):
 
     import csv
 
